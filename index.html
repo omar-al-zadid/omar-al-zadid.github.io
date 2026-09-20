@@ -29,10 +29,11 @@
       align-items: center;
     }
 
-    .logo {
+    .logo a {
       font-size: 20px;
       font-weight: 700;
-      letter-spacing: 0.2px;
+      text-decoration: none;
+      color: #1f1f1f;
     }
 
     nav a {
@@ -42,7 +43,8 @@
       font-size: 15px;
     }
 
-    nav a:hover {
+    nav a:hover,
+    nav a.active {
       color: #7d5a3c;
     }
 
@@ -155,13 +157,20 @@
       background: white;
       border-radius: 14px;
       padding: 30px;
-      min-height: 230px;
       box-shadow: 0 4px 18px rgba(0,0,0,0.05);
     }
 
+    .card h2,
     .card h3 {
       margin-top: 0;
-      font-size: 22px;
+    }
+
+    .card h2 {
+      font-size: 25px;
+    }
+
+    .card h3 {
+      font-size: 21px;
     }
 
     .card p {
@@ -175,6 +184,39 @@
       font-weight: 600;
     }
 
+    .featured {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 24px;
+    }
+
+    .featured-main {
+      background: white;
+      border-radius: 14px;
+      padding: 34px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    }
+
+    .featured-main h2 {
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .featured-main p {
+      color: #555;
+      font-size: 17px;
+    }
+
+    .small-label {
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #7d5a3c;
+      margin-bottom: 10px;
+    }
+
     footer {
       max-width: 1180px;
       margin: 80px auto 30px;
@@ -185,16 +227,18 @@
     }
 
     @media (max-width: 850px) {
-      .hero {
+
+      .hero,
+      .featured {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
         grid-template-columns: 1fr;
       }
 
       h1 {
         font-size: 46px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
       }
 
       header {
@@ -215,15 +259,19 @@
 <body>
 
   <header>
-    <div class="logo">Omar Al-Zadid</div>
+
+    <div class="logo">
+      <a href="index.html">Omar Al-Zadid</a>
+    </div>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
+
   </header>
 
 
@@ -246,10 +294,9 @@
         </div>
 
         <p class="intro">
-          I study decision problems at the intersection of pricing,
-          supply chains, and analytics. My research uses quantitative
-          modeling to understand how firms can make better operational
-          decisions under uncertainty.
+          I study how firms make better decisions in pricing, supply chains,
+          and operations. My work combines analytical modeling, optimization,
+          and data-driven methods to address practical managerial problems.
         </p>
 
         <div class="buttons">
@@ -274,7 +321,7 @@
     </section>
 
 
-    <section class="section" id="research">
+    <section class="section">
 
       <div class="section-title">
         What I work on
@@ -283,33 +330,39 @@
       <div class="cards">
 
         <div class="card">
+
           <h3>Pricing & Revenue Management</h3>
+
           <p>
-            I examine how firms can design pricing and discount strategies
-            that improve profitability while accounting for customer behavior
-            and operational constraints.
+            Designing pricing and discount strategies that improve firm
+            profitability while accounting for customer behavior and
+            operational trade-offs.
           </p>
-          <a href="#">Learn more →</a>
+
         </div>
 
 
         <div class="card">
+
           <h3>Supply Chain Analytics</h3>
+
           <p>
-            My work explores data-driven supply chain decisions, including
-            logistics, freshness, uncertainty, and distribution planning.
+            Studying logistics, distribution, product freshness,
+            uncertainty, and data-driven supply chain decision making.
           </p>
-          <a href="#">Learn more →</a>
+
         </div>
 
 
         <div class="card">
+
           <h3>Decision Analytics</h3>
+
           <p>
-            I use optimization, predictive modeling, and analytical methods
-            to study complex managerial decision problems.
+            Using optimization, forecasting, and quantitative methods
+            to support complex managerial decisions.
           </p>
-          <a href="#">Learn more →</a>
+
         </div>
 
       </div>
@@ -317,58 +370,86 @@
     </section>
 
 
-    <section class="section" id="teaching">
+    <section class="section">
+
+      <div class="section-title">
+        Featured Research
+      </div>
+
+      <div class="featured">
+
+        <div class="featured-main">
+
+          <div class="small-label">
+            Job Market Paper
+          </div>
+
+          <h2>
+            Optimal Multi-Item Business Volume Discount Strategies for Sellers
+          </h2>
+
+          <p>
+            This research examines how sellers can design volume-discount
+            strategies across multiple products to improve profitability
+            while accounting for customer purchasing behavior and operational
+            trade-offs.
+          </p>
+
+          <a href="research.html">
+            View research →
+          </a>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="small-label">
+            Current Project
+          </div>
+
+          <h3>
+            Freshness-Aware Supply Chain Decisions
+          </h3>
+
+          <p>
+            Integrating remaining shelf-life prediction with logistics
+            and profit optimization for perishable products.
+          </p>
+
+          <a href="research.html">
+            Learn more →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
 
       <div class="section-title">
         Teaching
       </div>
 
       <div class="card">
-        <h3>Teaching operations through reasoning and application</h3>
-        <p>
-          My teaching focuses on helping students understand why a method works,
-          recognize when it is useful, and apply it confidently to real
-          managerial problems.
-        </p>
-      </div>
 
-    </section>
-
-
-    <section class="section" id="about">
-
-      <div class="section-title">
-        About
-      </div>
-
-      <div class="card">
-        <p>
-          I am a PhD candidate in Operations Management at Washington State
-          University. My research interests include pricing, supply chains,
-          analytics, and quantitative decision making.
-        </p>
-      </div>
-
-    </section>
-
-
-    <section class="section" id="contact">
-
-      <div class="section-title">
-        Contact
-      </div>
-
-      <div class="card">
-        <p>
-          Washington State University
-        </p>
+        <h2>
+          Teaching operations through reasoning and application.
+        </h2>
 
         <p>
-          Email:
-          <a href="mailto:your-email@wsu.edu">
-            your-email@wsu.edu
-          </a>
+          My teaching focuses on helping students understand why a method
+          works, recognize when it is useful, and apply it confidently to
+          real managerial problems.
         </p>
+
+        <a href="teaching.html">
+          View teaching →
+        </a>
+
       </div>
 
     </section>
