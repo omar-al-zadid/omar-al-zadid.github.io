@@ -17,7 +17,6 @@
       font-family: "Helvetica Neue", Arial, sans-serif;
       background: #f7f6f2;
       color: #1f1f1f;
-      line-height: 1.6;
     }
 
     header {
@@ -49,12 +48,13 @@
     }
 
     .hero {
+      min-height: calc(100vh - 100px);
       max-width: 1180px;
-      margin: 70px auto 110px;
-      padding: 0 40px;
+      margin: 0 auto;
+      padding: 40px;
       display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 70px;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 80px;
       align-items: center;
     }
 
@@ -64,37 +64,45 @@
       font-size: 13px;
       color: #7d5a3c;
       font-weight: 700;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 64px;
-      line-height: 1.02;
+      font-size: 68px;
+      line-height: 1;
       margin: 0 0 22px;
-      font-weight: 700;
-      letter-spacing: -2px;
+      letter-spacing: -2.5px;
     }
 
     .subtitle {
-      font-size: 24px;
-      color: #4b4b4b;
-      margin-bottom: 26px;
+      font-size: 25px;
+      color: #494949;
+      margin-bottom: 28px;
     }
 
     .intro {
-      max-width: 720px;
-      font-size: 18px;
-      color: #4a4a4a;
+      max-width: 650px;
+      font-size: 20px;
+      line-height: 1.65;
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    .research-line {
+      font-size: 14px;
+      color: #777;
+      letter-spacing: 0.4px;
+      margin-top: 28px;
     }
 
     .buttons {
-      margin-top: 34px;
+      margin-top: 30px;
     }
 
     .button {
       display: inline-block;
       text-decoration: none;
-      padding: 13px 20px;
+      padding: 13px 21px;
       margin-right: 12px;
       border-radius: 6px;
       font-size: 15px;
@@ -107,7 +115,7 @@
     }
 
     .primary:hover {
-      background: #3a3a3a;
+      background: #3b3b3b;
     }
 
     .secondary {
@@ -119,127 +127,29 @@
       border-color: #1f1f1f;
     }
 
-    .photo-card {
+    .photo {
+      width: 100%;
+      min-height: 500px;
       background: #e9e4db;
-      min-height: 430px;
-      border-radius: 18px;
+      border-radius: 22px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #777;
       font-size: 15px;
       text-align: center;
-      padding: 20px;
-    }
-
-    .section {
-      max-width: 1180px;
-      margin: 0 auto 100px;
-      padding: 0 40px;
-    }
-
-    .section-title {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1.8px;
-      color: #7d5a3c;
-      margin-bottom: 28px;
-      font-weight: 700;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 14px;
       padding: 30px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
-    }
-
-    .card h2,
-    .card h3 {
-      margin-top: 0;
-    }
-
-    .card h2 {
-      font-size: 25px;
-    }
-
-    .card h3 {
-      font-size: 21px;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 16px;
-    }
-
-    .card a {
-      text-decoration: none;
-      color: #7d5a3c;
-      font-weight: 600;
-    }
-
-    .featured {
-      display: grid;
-      grid-template-columns: 1.4fr 0.6fr;
-      gap: 24px;
-    }
-
-    .featured-main {
-      background: white;
-      border-radius: 14px;
-      padding: 34px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
-    }
-
-    .featured-main h2 {
-      font-size: 28px;
-      margin-top: 0;
-      margin-bottom: 12px;
-    }
-
-    .featured-main p {
-      color: #555;
-      font-size: 17px;
-    }
-
-    .small-label {
-      text-transform: uppercase;
-      letter-spacing: 1.3px;
-      font-size: 12px;
-      font-weight: 700;
-      color: #7d5a3c;
-      margin-bottom: 10px;
     }
 
     footer {
       max-width: 1180px;
-      margin: 80px auto 30px;
-      padding: 25px 40px 40px;
-      color: #777;
-      font-size: 14px;
-      border-top: 1px solid #ddd;
+      margin: 0 auto;
+      padding: 20px 40px 30px;
+      color: #888;
+      font-size: 13px;
     }
 
     @media (max-width: 850px) {
-
-      .hero,
-      .featured {
-        grid-template-columns: 1fr;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 46px;
-      }
 
       header {
         flex-direction: column;
@@ -250,6 +160,30 @@
       nav a {
         margin-left: 0;
         margin-right: 18px;
+      }
+
+      .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .subtitle {
+        font-size: 21px;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+
+      .photo {
+        min-height: 420px;
       }
     }
   </style>
@@ -294,9 +228,8 @@
         </div>
 
         <p class="intro">
-          I study how firms make better decisions in pricing, supply chains,
-          and operations. My work combines analytical modeling, optimization,
-          and data-driven methods to address practical managerial problems.
+          I study how firms make better decisions in pricing,
+          supply chains, and analytics.
         </p>
 
         <div class="buttons">
@@ -311,145 +244,15 @@
 
         </div>
 
+        <div class="research-line">
+          Pricing & Revenue Management · Supply Chain Analytics · Decision Analytics
+        </div>
+
       </div>
 
 
-      <div class="photo-card">
+      <div class="photo">
         Your professional photo will go here
-      </div>
-
-    </section>
-
-
-    <section class="section">
-
-      <div class="section-title">
-        What I work on
-      </div>
-
-      <div class="cards">
-
-        <div class="card">
-
-          <h3>Pricing & Revenue Management</h3>
-
-          <p>
-            Designing pricing and discount strategies that improve firm
-            profitability while accounting for customer behavior and
-            operational trade-offs.
-          </p>
-
-        </div>
-
-
-        <div class="card">
-
-          <h3>Supply Chain Analytics</h3>
-
-          <p>
-            Studying logistics, distribution, product freshness,
-            uncertainty, and data-driven supply chain decision making.
-          </p>
-
-        </div>
-
-
-        <div class="card">
-
-          <h3>Decision Analytics</h3>
-
-          <p>
-            Using optimization, forecasting, and quantitative methods
-            to support complex managerial decisions.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="section">
-
-      <div class="section-title">
-        Featured Research
-      </div>
-
-      <div class="featured">
-
-        <div class="featured-main">
-
-          <div class="small-label">
-            Job Market Paper
-          </div>
-
-          <h2>
-            Optimal Multi-Item Business Volume Discount Strategies for Sellers
-          </h2>
-
-          <p>
-            This research examines how sellers can design volume-discount
-            strategies across multiple products to improve profitability
-            while accounting for customer purchasing behavior and operational
-            trade-offs.
-          </p>
-
-          <a href="research.html">
-            View research →
-          </a>
-
-        </div>
-
-
-        <div class="card">
-
-          <div class="small-label">
-            Current Project
-          </div>
-
-          <h3>
-            Freshness-Aware Supply Chain Decisions
-          </h3>
-
-          <p>
-            Integrating remaining shelf-life prediction with logistics
-            and profit optimization for perishable products.
-          </p>
-
-          <a href="research.html">
-            Learn more →
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="section">
-
-      <div class="section-title">
-        Teaching
-      </div>
-
-      <div class="card">
-
-        <h2>
-          Teaching operations through reasoning and application.
-        </h2>
-
-        <p>
-          My teaching focuses on helping students understand why a method
-          works, recognize when it is useful, and apply it confidently to
-          real managerial problems.
-        </p>
-
-        <a href="teaching.html">
-          View teaching →
-        </a>
-
       </div>
 
     </section>
