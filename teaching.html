@@ -8,6 +8,7 @@
   <title>Teaching | Omar Al-Zadid</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -20,18 +21,24 @@
       line-height: 1.6;
     }
 
+
+    /* =========================
+       HEADER
+    ========================== */
+
     header {
       max-width: 1180px;
       margin: 0 auto;
       padding: 28px 40px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
-    
+
       position: sticky;
       top: 0;
       z-index: 1000;
-    
+
       background: #f7f6f2;
       border-bottom: 1px solid rgba(0,0,0,0.05);
     }
@@ -55,9 +62,14 @@
       color: #7d5a3c;
     }
 
+
+    /* =========================
+       PAGE INTRO
+    ========================== */
+
     .page-header {
       max-width: 1180px;
-      margin: 80px auto 70px;
+      margin: 80px auto 55px;
       padding: 0 40px;
     }
 
@@ -75,6 +87,7 @@
       line-height: 1.05;
       margin: 0 0 24px;
       letter-spacing: -1.5px;
+      max-width: 850px;
     }
 
     .intro {
@@ -82,6 +95,11 @@
       font-size: 20px;
       color: #4a4a4a;
     }
+
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================== */
 
     .section {
       max-width: 1180px;
@@ -97,6 +115,64 @@
       margin-bottom: 28px;
       font-weight: 700;
     }
+
+
+    /* =========================
+       TEACHING HIGHLIGHTS
+    ========================== */
+
+    .teaching-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .highlight-box {
+      background: #eee8df;
+      border-radius: 14px;
+      padding: 34px 36px;
+
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      border-left: 4px solid #7d5a3c;
+    }
+
+    .highlight-number {
+      font-size: 68px;
+      line-height: 1;
+      font-weight: 700;
+      color: #7d5a3c;
+      min-width: 55px;
+    }
+
+    .highlight-label {
+      color: #7d5a3c;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .highlight-text h2 {
+      font-size: 22px;
+      line-height: 1.25;
+      margin: 0 0 7px;
+    }
+
+    .highlight-text p {
+      margin: 0;
+      color: #555;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+
+    /* =========================
+       PHILOSOPHY CARDS
+    ========================== */
 
     .cards {
       display: grid;
@@ -118,6 +194,7 @@
 
     .card h2 {
       font-size: 25px;
+      line-height: 1.25;
     }
 
     .card h3 {
@@ -127,7 +204,76 @@
     .card p {
       color: #555;
       font-size: 16px;
+      margin-bottom: 0;
     }
+
+
+    /* =========================
+       HOW I PUT IT INTO PRACTICE
+    ========================== */
+
+    .practice-wrapper {
+      background: white;
+      border-radius: 14px;
+      padding: 5px 34px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+    }
+
+    .practice-path {
+      padding: 30px 0;
+      border-bottom: 1px solid #e4e0da;
+    }
+
+    .practice-path:last-child {
+      border-bottom: none;
+    }
+
+    .practice-heading {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 18px;
+    }
+
+    .practice-number {
+      color: #7d5a3c;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    .practice-heading h3 {
+      margin: 0;
+      font-size: 21px;
+    }
+
+    .practice-steps {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 11px;
+      padding-left: 39px;
+    }
+
+    .practice-steps span {
+      background: #f7f6f2;
+      border-radius: 30px;
+      padding: 8px 15px;
+      font-size: 14px;
+      color: #444;
+      white-space: nowrap;
+    }
+
+    .practice-arrow {
+      color: #7d5a3c;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+
+    /* =========================
+       CLASSROOM EXAMPLES
+    ========================== */
 
     .course {
       background: white;
@@ -137,29 +283,200 @@
       box-shadow: 0 4px 18px rgba(0,0,0,0.05);
     }
 
+    .example-label {
+      color: #7d5a3c;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
     .course-title {
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 8px;
     }
 
+    .course p {
+      margin: 0;
+      color: #555;
+      font-size: 16px;
+    }
+
     .course-meta {
       color: #777;
       font-size: 15px;
-      margin-bottom: 10px;
+      margin-top: 7px;
     }
 
-    .quote {
+
+    /* =========================
+       TEACHING EXPERIENCE
+    ========================== */
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .experience-item {
+      background: white;
+      border-radius: 14px;
+      padding: 25px 28px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    }
+
+    .experience-title {
       font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .experience-meta {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .experience-role {
+      color: #7d5a3c;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+
+    /* =========================
+       TEACHING RESEARCH PROJECT
+    ========================== */
+
+    .teaching-project {
+      background: #eee8df;
+      border-left: 4px solid #7d5a3c;
+      border-radius: 14px;
+      padding: 34px 36px;
+    }
+
+    .teaching-project h2 {
+      font-size: 27px;
+      margin: 6px 0 5px;
+      line-height: 1.25;
+    }
+
+    .project-label {
+      color: #7d5a3c;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .project-authors {
+      color: #777;
+      font-size: 15px;
+      margin-top: 0;
+    }
+
+    .teaching-project p {
+      color: #555;
+    }
+
+
+    /* =========================
+       CONTINUOUS IMPROVEMENT
+    ========================== */
+
+    .improvement-card {
+      position: relative;
+    }
+
+    .improvement-number {
+      font-size: 12px;
+      color: #7d5a3c;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin-bottom: 12px;
+    }
+
+
+    /* =========================
+       STUDENT FEEDBACK
+    ========================== */
+
+    .feedback-featured {
+      background: white;
+      border-radius: 14px;
+      padding: 27px 32px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    }
+
+    .featured-quote {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.65;
       color: #444;
       font-style: italic;
+      margin: 0;
+    }
+
+    .all-feedback {
+      margin-top: 24px;
+      background: #eee8df;
+      border-radius: 14px;
+      padding: 22px 28px;
+    }
+
+    .all-feedback summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: #7d5a3c;
+    }
+
+    .feedback-list {
+      margin-top: 24px;
+    }
+
+    .feedback-list p {
+      background: white;
+      padding: 18px 22px;
+      border-radius: 10px;
+      color: #555;
+      font-style: italic;
       margin-bottom: 12px;
+    }
+
+
+    /* =========================
+       STUDENT NOTE
+    ========================== */
+
+    .student-note {
+      max-width: 850px;
+      border-left: 3px solid #7d5a3c;
+      padding: 12px 0 12px 30px;
+    }
+
+    .student-note p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.7;
+      color: #444;
+      font-style: italic;
     }
 
     .quote-source {
       color: #777;
       font-size: 14px;
     }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
 
     footer {
       max-width: 1180px;
@@ -170,107 +487,11 @@
       border-top: 1px solid #ddd;
     }
 
+
     /* =========================
-       TEACHING RESEARCH PROJECT
+       MOBILE
     ========================== */
-    
-    .teaching-project {
-      background: #eee8df;
-      border-left: 4px solid #7d5a3c;
-      border-radius: 14px;
-      padding: 34px 36px;
-    }
-    
-    .teaching-project h2 {
-      font-size: 27px;
-      margin: 6px 0 5px;
-    }
-    
-    .project-label {
-      color: #7d5a3c;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-    
-    .project-authors {
-      color: #777;
-      font-size: 15px;
-      margin-top: 0;
-    }
-    
-    .teaching-project p {
-      color: #555;
-    }
-    
-    
-    /* =========================
-       STUDENT FEEDBACK
-    ========================== */
-    
-    .feedback-featured {
-      background: white;
-      border-radius: 14px;
-      padding: 27px 32px;
-      margin-bottom: 16px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
-    }
-    
-    .featured-quote {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 18px;
-      line-height: 1.65;
-      color: #444;
-      font-style: italic;
-      margin: 0;
-    }
-    
-    .all-feedback {
-      margin-top: 24px;
-      background: #eee8df;
-      border-radius: 14px;
-      padding: 22px 28px;
-    }
-    
-    .all-feedback summary {
-      cursor: pointer;
-      font-weight: 700;
-      color: #7d5a3c;
-    }
-    
-    .feedback-list {
-      margin-top: 24px;
-    }
-    
-    .feedback-list p {
-      background: white;
-      padding: 18px 22px;
-      border-radius: 10px;
-      color: #555;
-      font-style: italic;
-      margin-bottom: 12px;
-    }
-    
-    
-    /* =========================
-       STUDENT NOTE
-    ========================== */
-    
-    .student-note {
-      max-width: 850px;
-      border-left: 3px solid #7d5a3c;
-      padding: 12px 0 12px 30px;
-    }
-    
-    .student-note p {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 20px;
-      line-height: 1.7;
-      color: #444;
-      font-style: italic;
-    }
-    
+
     @media (max-width: 850px) {
 
       header {
@@ -292,15 +513,75 @@
         font-size: 18px;
       }
 
-      .cards {
+      .teaching-highlights,
+      .cards,
+      .experience-grid {
         grid-template-columns: 1fr;
       }
+
+      .highlight-box {
+        align-items: flex-start;
+      }
+
+      .practice-steps {
+        padding-left: 0;
+      }
+
+      .practice-arrow {
+        display: none;
+      }
+
+      .practice-steps {
+        gap: 8px;
+      }
+
+      .page-header {
+        margin-top: 55px;
+      }
+
     }
+
+
+    @media (max-width: 550px) {
+
+      header,
+      .page-header,
+      .section,
+      footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .highlight-box {
+        padding: 27px 25px;
+        gap: 20px;
+      }
+
+      .highlight-number {
+        font-size: 55px;
+      }
+
+      .practice-wrapper {
+        padding: 4px 24px;
+      }
+
+    }
+
   </style>
+
 </head>
 
 
 <body>
+
+
+  <!-- =========================
+       HEADER
+  ========================== -->
 
   <header>
 
@@ -321,588 +602,822 @@
 
   <main>
 
+
+    <!-- =========================
+         PAGE INTRO
+    ========================== -->
+
+    <section class="page-header">
+
+      <div class="eyebrow">
+        Teaching
+      </div>
+
+      <h1>
+        Helping students understand, recognize, and apply.
+      </h1>
+
+      <p class="intro">
+        My teaching philosophy centers on three outcomes:
+        clear and durable understanding, recognition of relevance,
+        and application through reasoning. I pursue these outcomes
+        through structured teaching, repeated engagement, realistic
+        applications, and gradually increasing student independence.
+      </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         TEACHING HIGHLIGHTS
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Teaching Highlights
+      </div>
+
+      <div class="teaching-highlights">
+
+
+        <div class="highlight-box">
+
+          <div class="highlight-number">
+            3
+          </div>
+
+          <div class="highlight-text">
+
+            <div class="highlight-label">
+              Courses Taught
+            </div>
+
+            <h2>
+              Instructor of Record
+            </h2>
+
+            <p>
+              Operations Management · Business Statistics ·
+              Spreadsheets, Data Visualization & Decision Analysis
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="highlight-box">
+
+          <div class="highlight-number">
+            1
+          </div>
+
+          <div class="highlight-text">
+
+            <div class="highlight-label">
+              Teaching Research in Progress
+            </div>
+
+            <h2>
+              Practicing Contract Negotiations with AI
+            </h2>
+
+            <p>
+              Exploring AI-supported practice for negotiation,
+              judgment, adaptability, and decision-making.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TEACHING PHILOSOPHY
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Teaching Philosophy
+      </div>
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <h2>
+            Clear & Durable Understanding
+          </h2>
+
+          <p>
+            I structure course material around clear learning goals,
+            break complex ideas into manageable steps, and reinforce
+            important concepts through repeated engagement, checks for
+            understanding, and connections across topics.
+          </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <h2>
+            Recognition of Relevance
+          </h2>
+
+          <p>
+            I use cases, realistic business situations, and applied
+            activities to help students recognize familiar concepts
+            when they appear in unfamiliar settings rather than simply
+            recalling textbook definitions.
+          </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <h2>
+            Application Through Reasoning
+          </h2>
+
+          <p>
+            I want students to become independent problem solvers.
+            They practice selecting appropriate methods, explaining
+            their reasoning, considering alternatives, and applying
+            what they know beyond familiar problem formats.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         HOW I PUT IT INTO PRACTICE
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        How I Put It Into Practice
+      </div>
+
+
+      <div class="practice-wrapper">
+
+
+        <div class="practice-path">
+
+          <div class="practice-heading">
+
+            <span class="practice-number">
+              01
+            </span>
+
+            <h3>
+              Structure & Reinforcement
+            </h3>
+
+          </div>
+
+
+          <div class="practice-steps">
+
+            <span>Learning goals</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Step-by-step progression</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Check understanding</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Revisit & connect</span>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="practice-path">
+
+          <div class="practice-heading">
+
+            <span class="practice-number">
+              02
+            </span>
+
+            <h3>
+              Learning Through Context
+            </h3>
+
+          </div>
+
+
+          <div class="practice-steps">
+
+            <span>Cases</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Real situations</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Recognize concepts</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Transfer across contexts</span>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="practice-path">
+
+          <div class="practice-heading">
+
+            <span class="practice-number">
+              03
+            </span>
+
+            <h3>
+              Guidance Toward Independence
+            </h3>
+
+          </div>
+
+
+          <div class="practice-steps">
+
+            <span>Model</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Practice</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Explain reasoning</span>
+
+            <span class="practice-arrow">→</span>
+
+            <span>Solve independently</span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         EXAMPLES FROM THE CLASSROOM
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Examples From the Classroom
+      </div>
+
+
+      <div class="course">
+
+        <div class="example-label">
+          Business Statistics
+        </div>
+
+        <div class="course-title">
+          Discovering Sampling Distributions
+        </div>
+
+        <p>
+          Student groups repeatedly draw small random samples and
+          calculate sample means. Once the class can see the distribution
+          emerging, I formally introduce sampling distributions and the
+          Central Limit Theorem, then reconnect those ideas later to
+          confidence intervals and hypothesis testing.
+        </p>
+
+      </div>
+
+
+
+      <div class="course">
+
+        <div class="example-label">
+          Operations Management
+        </div>
+
+        <div class="course-title">
+          Recognizing Quality Costs
+        </div>
+
+        <p>
+          Students work with scenarios involving prevention, appraisal,
+          internal failure, and external failure costs. Groups classify
+          each situation and compare their reasoning, helping them
+          recognize concepts beyond the examples in which they were
+          originally introduced.
+        </p>
+
+      </div>
+
+
+
+      <div class="course">
+
+        <div class="example-label">
+          Decision Analysis
+        </div>
+
+        <div class="course-title">
+          Creating Decision Problems
+        </div>
+
+        <p>
+          Students develop their own multi-stage decision problems,
+          preferably from their own experiences, and solve them using
+          decision trees. This requires them to decide how the method
+          applies rather than simply reproduce a familiar exercise.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TEACHING EXPERIENCE
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Teaching Experience
+      </div>
+
+
+      <div class="experience-grid">
+
+
+        <div class="experience-item">
+
+          <div class="experience-role">
+            Instructor of Record
+          </div>
+
+          <div class="experience-title">
+            Operations Management — MGTOP 340
+          </div>
+
+          <div class="experience-meta">
+            Washington State University · Fall 2026
+          </div>
+
+        </div>
+
+
+
+        <div class="experience-item">
+
+          <div class="experience-role">
+            Instructor of Record
+          </div>
+
+          <div class="experience-title">
+            Business Statistics — MGTOP 215
+          </div>
+
+          <div class="experience-meta">
+            Washington State University · Fall 2025
+          </div>
+
+        </div>
+
+
+
+        <div class="experience-item">
+
+          <div class="experience-role">
+            Instructor of Record
+          </div>
+
+          <div class="experience-title">
+            Spreadsheets, Data Visualization & Decision Analysis — B_A 212
+          </div>
+
+          <div class="experience-meta">
+            Washington State University · Fall 2024
+          </div>
+
+        </div>
+
+
+
+        <div class="experience-item">
+
+          <div class="experience-role">
+            Lab Instructor
+          </div>
+
+          <div class="experience-title">
+            Business Statistics — MGTOP 215
+          </div>
+
+          <div class="experience-meta">
+            Washington State University · Fall 2023
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TEACHING INNOVATION
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Teaching Innovation & Scholarship
+      </div>
+
+
+      <div class="teaching-project">
+
+        <div class="project-label">
+          Teaching Research in Progress
+        </div>
+
+        <h2>
+          Practicing Contract Negotiations with AI
+        </h2>
+
+        <p class="project-authors">
+          with Charles L. Munson and Jonathan Jackson
+        </p>
+
+        <p>
+          This project examines how AI can support practice-based
+          learning of complex negotiation skills. Students negotiate
+          purchasing contracts with AI tools acting as sellers while
+          we examine how effectively they incorporate important
+          contractual elements into their decisions.
+        </p>
+
+        <p>
+          The exercise is being integrated into Operations Management
+          instruction to explore how AI-supported practice can help
+          students develop judgment, adaptability, and negotiation skills.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTINUOUS IMPROVEMENT
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Continuous Improvement
+      </div>
+
+
+      <div class="cards">
+
+
+        <div class="card improvement-card">
+
+          <div class="improvement-number">
+            01
+          </div>
+
+          <h3>
+            Understanding Students
+          </h3>
+
+          <p>
+            I use a pre-course survey to better understand students'
+            backgrounds, preparation, and expectations before the
+            course develops.
+          </p>
+
+        </div>
+
+
+
+        <div class="card improvement-card">
+
+          <div class="improvement-number">
+            02
+          </div>
+
+          <h3>
+            Reflective Teaching
+          </h3>
+
+          <p>
+            I maintain a teaching journal to record what worked,
+            what did not, and my reflections. This helps me treat
+            teaching as an iterative process rather than a fixed routine.
+          </p>
+
+        </div>
+
+
+
+        <div class="card improvement-card">
+
+          <div class="improvement-number">
+            03
+          </div>
+
+          <h3>
+            Responding to Students
+          </h3>
+
+          <p>
+            I use student questions, feedback, and classroom responses
+            to adjust explanations, pacing, examples, and instructional
+            approaches when needed.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         STUDENT FEEDBACK
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        What Students Say
+      </div>
+
+
+      <div class="feedback-featured">
+
+        <p class="featured-quote">
+          “Muhammad Omar Al–Zadid was a very good instructor, he clearly
+          wanted us to learn and was always wanting to help us as much as
+          he could. He was very fast at responding to emails, and was
+          always asking if we understood the material.”
+        </p>
+
+      </div>
+
+
+
+      <div class="feedback-featured">
+
+        <p class="featured-quote">
+          “Very nice and thoughtful professor. Makes the class environment
+          easy to learn in and is very clear when walking through problems.”
+        </p>
+
+      </div>
+
+
+
+      <div class="feedback-featured">
+
+        <p class="featured-quote">
+          “Very good at teaching the content in an easy way to understand,
+          teaches the problems very step by step and organized easy to follow.
+          Always takes the time to stop and ask the students if they understand,
+          if they have any questions, and if he needs to do more examples so
+          we can get it down.”
+        </p>
+
+      </div>
+
+
+
+      <div class="feedback-featured">
+
+        <p class="featured-quote">
+          “Is very open to feedback and even made a change in how they
+          presented lectures partway through the semester after receiving
+          student feedback.”
+        </p>
+
+      </div>
+
+
+
+      <div class="feedback-featured">
+
+        <p class="featured-quote">
+          “Good pace in class, would go over quality examples, slow down
+          or go over something again if needed. And always offered extra
+          help outside of class.”
+        </p>
+
+      </div>
+
+
+
+      <details class="all-feedback">
+
+        <summary>
+          Read more student comments
+        </summary>
+
+
+        <div class="feedback-list">
+
+          <p>
+            “Did a great job teaching the course, I learned a lot.”
+          </p>
+
+          <p>
+            “Super kind and understanding, You can tell he wants his
+            students to succeed.”
+          </p>
+
+          <p>
+            “Great professor who is very smart.”
+          </p>
+
+          <p>
+            “He was really great. fast with email and always willing to
+            help with any problems or questions. great guy.”
+          </p>
+
+          <p>
+            “Omar was helpful whenever I had questions and gave good
+            instruction throughout the course.”
+          </p>
+
+          <p>
+            “Great Professor, Loved online exams, and extra credit lab”
+          </p>
+
+          <p>
+            “Great instructor, very nice and helpful.”
+          </p>
+
+          <p>
+            “He was very enthusiastic, kind, and helpful.”
+          </p>
+
+          <p>
+            “Super super nice instructor and taught a good class”
+          </p>
+
+          <p>
+            “Cool, smart and helpful.”
+          </p>
+
+          <p>
+            “Great professor, always around to help and made sure to help”
+          </p>
+
+          <p>
+            “Good professor that made learning the content easy.”
+          </p>
+
+          <p>
+            “Was helpful when asked and very accommodating/ understanding.”
+          </p>
+
+          <p>
+            “He is a fantastic instructor. He was always ready to answer
+            student questions and give feedback. He also provided numerous
+            opportunities for students to improve their grades.”
+          </p>
+
+          <p>
+            “Great professor who was patient and ensured that we had time
+            to ask questions about the content provided.”
+          </p>
+
+          <p>
+            “Very helpful, knew how to explain concepts well.”
+          </p>
+
+          <p>
+            “He is there to help you when you email he reply right away”
+          </p>
+
+          <p>
+            “Very understanding and helpful, responds to emails in a timely
+            manner and is informative about the class material when missed.”
+          </p>
+
+          <p>
+            “Omar is great at communicating and efficient when answering
+            students questions.”
+          </p>
+
+          <p>
+            “Cared about his students and provided helpful feedback when needed.”
+          </p>
+
+          <p>
+            “Good professor, always willing to help, easy to contact.
+            Professor Zadid did a good job explaining concepts.”
+          </p>
+
+        </div>
+
+      </details>
+
+    </section>
+
+
+
+    <!-- =========================
+         EARLY STUDENT NOTE
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title">
+        A Note From My First Semester of Teaching
+      </div>
+
+
+      <div class="student-note">
+
+        <p>
+          “I just wanted to say thank you so much for being such a great TA
+          for MGTOP 215. I always understood the material a lot better when
+          attending the labs and having you explain it. So thank you for
+          being so patient with all of us this semester. Continue to be an
+          amazing TA for more students to come.”
+        </p>
+
+        <div class="quote-source">
+          Student email · Fall 2023
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
   <!-- =========================
-       PAGE INTRO
+       FOOTER
   ========================== -->
-
-  <section class="page-header">
-
-    <div class="eyebrow">
-      Teaching
-    </div>
-
-    <h1>
-      Helping students understand, recognize, and apply.
-    </h1>
-
-    <p class="intro">
-      My teaching philosophy centers on three outcomes:
-      clear and durable understanding, recognition of relevance,
-      and application through reasoning. I pursue these outcomes
-      through structured teaching, repeated engagement, realistic
-      applications, and gradually increasing student independence.
-    </p>
-
-  </section>
-
-
-  <!-- =========================
-       TEACHING PHILOSOPHY
-  ========================== -->
-
-  <section class="section">
-
-    <div class="section-title">
-      Teaching Philosophy
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-
-        <h2>Clear & Durable Understanding</h2>
-
-        <p>
-          I structure course material around clear learning goals,
-          break complex ideas into manageable steps, and reinforce
-          important concepts through repeated engagement, checks for
-          understanding, and connections across topics.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h2>Recognition of Relevance</h2>
-
-        <p>
-          I use cases, realistic business situations, and applied
-          activities to help students recognize familiar concepts
-          when they appear in unfamiliar settings rather than simply
-          recalling textbook definitions.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h2>Application Through Reasoning</h2>
-
-        <p>
-          I want students to become independent problem solvers.
-          They practice selecting appropriate methods, explaining
-          their reasoning, considering alternatives, and applying
-          what they know beyond familiar problem formats.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       HOW I TEACH
-  ========================== -->
-
-  <section class="section">
-
-    <div class="section-title">
-      How I Put It Into Practice
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-
-        <h3>Structure & Reinforcement</h3>
-
-        <p>
-          I organize lectures from foundational ideas toward more
-          complex applications, regularly check understanding, and
-          revisit difficult concepts when necessary. I also summarize
-          key ideas at the end of class and reconnect them with later
-          material so students encounter important concepts more than once.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>Learning Through Context</h3>
-
-        <p>
-          I use cases and applied exercises to help students recognize
-          concepts in different settings. Examples include short Tableau
-          exercises, classifying quality-cost scenarios, and activities
-          that allow students to discover statistical patterns before
-          formal concepts are introduced.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>Guidance Toward Independence</h3>
-
-        <p>
-          I initially model how to approach a problem, then gradually
-          reduce guidance as students gain confidence. Students are
-          encouraged to justify their methods, consider alternative
-          approaches, and develop their own problems and solutions.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       EXAMPLES FROM THE CLASSROOM
-  ========================== -->
-
-  <section class="section">
-
-    <div class="section-title">
-      Examples From the Classroom
-    </div>
-
-
-    <div class="course">
-
-      <div class="course-title">
-        Discovering Sampling Distributions
-      </div>
-
-      <p>
-        In Business Statistics, student groups repeatedly draw small
-        random samples and calculate sample means. Once the class can
-        see the distribution emerging, I formally introduce sampling
-        distributions and the Central Limit Theorem, then reconnect
-        those ideas later to confidence intervals and hypothesis testing.
-      </p>
-
-    </div>
-
-
-    <div class="course">
-
-      <div class="course-title">
-        Recognizing Quality Costs
-      </div>
-
-      <p>
-        In Operations Management, students work with scenarios involving
-        prevention, appraisal, internal failure, and external failure
-        costs. Groups classify each situation and compare their reasoning,
-        helping them recognize concepts beyond the examples in which
-        they were originally introduced.
-      </p>
-
-    </div>
-
-
-    <div class="course">
-
-      <div class="course-title">
-        Creating Decision Problems
-      </div>
-
-      <p>
-        In Decision Analysis, students develop their own multi-stage
-        decision problems—preferably from their own experiences—and
-        solve them using decision trees. This requires them to decide
-        how the method applies rather than simply reproducing a familiar
-        exercise.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       TEACHING EXPERIENCE
-  ========================== -->
-
-  <section class="section">
-
-    <div class="section-title">
-      Teaching Experience
-    </div>
-
-
-    <div class="course">
-
-      <div class="course-title">
-        Operations Management — MGTOP 340
-      </div>
-
-      <div class="course-meta">
-        Instructor of Record · Washington State University · Fall 2026
-      </div>
-
-    </div>
-
-
-    <div class="course">
-
-      <div class="course-title">
-        Business Statistics — MGTOP 215
-      </div>
-
-      <div class="course-meta">
-        Instructor of Record · Washington State University · Fall 2025
-      </div>
-
-    </div>
-
-
-    <div class="course">
-
-      <div class="course-title">
-        Spreadsheets, Data Visualization & Decision Analysis — B_A 212
-      </div>
-
-      <div class="course-meta">
-        Instructor of Record · Washington State University · Fall 2024
-      </div>
-
-    </div>
-
-
-    <div class="course">
-
-      <div class="course-title">
-        Business Statistics — MGTOP 215
-      </div>
-
-      <div class="course-meta">
-        Lab Instructor · Washington State University · Fall 2023
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       TEACHING INNOVATION
-  ========================== -->
-
-  <section class="section">
-
-    <div class="section-title">
-      Teaching Innovation & Scholarship
-    </div>
-
-    <div class="teaching-project">
-
-      <div class="project-label">
-        Teaching Research in Progress
-      </div>
-
-      <h2>
-        Practicing Contract Negotiations with AI
-      </h2>
-
-      <p class="project-authors">
-        with Charles L. Munson and Jonathan Jackson
-      </p>
-
-      <p>
-        This project examines how AI can support practice-based learning
-        of complex negotiation skills. Students negotiate purchasing
-        contracts with AI tools acting as sellers while we examine how
-        effectively they incorporate important contractual elements into
-        their decisions.
-      </p>
-
-      <p>
-        The exercise is being integrated into Operations Management
-        instruction to explore how AI-supported practice can help students
-        develop judgment, adaptability, and negotiation skills.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       CONTINUOUS IMPROVEMENT
-  ========================== -->
-
-  <section class="section">
-
-    <div class="section-title">
-      Continuous Improvement
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-
-        <h3>Understanding Students</h3>
-
-        <p>
-          I use a pre-course survey to better understand students'
-          backgrounds, preparation, and expectations before the course
-          develops.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>Reflective Teaching</h3>
-
-        <p>
-          I maintain a teaching journal to record what worked, what did
-          not, and what I would change. This helps me treat teaching as
-          an iterative process rather than a fixed routine.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>Responding to Students</h3>
-
-        <p>
-          I use student questions, feedback, and classroom responses
-          to adjust explanations, pacing, examples, and instructional
-          approaches when needed.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       STUDENT FEEDBACK
-  ========================== -->
-
-  <section class="section">
-
-    <div class="section-title">
-      What Students Say
-    </div>
-
-
-    <div class="feedback-featured">
-
-      <p class="featured-quote">
-        “Muhammad Omar Al–Zadid was a very good instructor, he clearly
-        wanted us to learn and was always wanting to help us as much as
-        he could. He was very fast at responding to emails, and was
-        always asking if we understood the material.”
-      </p>
-
-    </div>
-
-
-    <div class="feedback-featured">
-
-      <p class="featured-quote">
-        “Very nice and thoughtful professor. Makes the class environment
-        easy to learn in and is very clear when walking through problems.”
-      </p>
-
-    </div>
-
-
-    <div class="feedback-featured">
-
-      <p class="featured-quote">
-        “Very good at teaching the content in an easy way to understand,
-        teaches the problems very step by step and organized easy to follow.
-        Always takes the time to stop and ask the students if they understand,
-        if they have any questions, and if he needs to do more examples so
-        we can get it down.”
-      </p>
-
-    </div>
-
-
-    <div class="feedback-featured">
-
-      <p class="featured-quote">
-        “Is very open to feedback and even made a change in how they
-        presented lectures partway through the semester after receiving
-        student feedback.”
-      </p>
-
-    </div>
-
-
-    <div class="feedback-featured">
-
-      <p class="featured-quote">
-        “Did a great job running the class, provided good information,
-        and was very communicative with students.”
-      </p>
-
-    </div>
-
-
-    <div class="feedback-featured">
-
-      <p class="featured-quote">
-        “He did as well as he could with potentially the most mind numbing
-        topic in the business world. Great professor, would take classes
-        from him again.”
-      </p>
-
-    </div>
-
-
-    <div class="feedback-featured">
-
-      <p class="featured-quote">
-        “Good pace in class, would go over quality examples, slow down
-        or go over something again if needed. And always offered extra
-        help outside of class.”
-      </p>
-
-    </div>
-
-
-    <!-- All additional student comments -->
-
-    <details class="all-feedback">
-
-      <summary>
-        Read more student comments
-      </summary>
-
-      <div class="feedback-list">
-
-        <p>“Did a great job teaching the course, I learned a lot.”</p>
-
-        <p>
-          “Super kind and understanding, You can tell he wants his
-          students to succeed.”
-        </p>
-
-        <p>“Great professor who is very smart.”</p>
-
-        <p>
-          “He was really great. fast with email and always willing to
-          help with any problems or questions. great guy.”
-        </p>
-
-        <p>
-          “Omar was helpful whenever I had questions and gave good
-          instruction throughout the course.”
-        </p>
-
-        <p>
-          “Great Professor, Loved online exams, and extra credit lab”
-        </p>
-
-        <p>“Great instructor, very nice and helpful.”</p>
-
-        <p>“He was very enthusiastic, kind, and helpful.”</p>
-
-        <p>“Super super nice instructor and taught a good class”</p>
-
-        <p>“Cool, smart and helpful.”</p>
-
-        <p>“Great professor, always around to help and made sure to help”</p>
-
-        <p>“Good professor that made learning the content easy.”</p>
-
-        <p>“Was helpful when asked and very accommodating/ understanding.”</p>
-
-        <p>
-          “He is a fantastic instructor. He was always ready to answer
-          student questions and give feedback. He also provided numerous
-          opportunities for students to improve their grades.”
-        </p>
-
-        <p>
-          “Great professor who was patient and ensured that we had time
-          to ask questions about the content provided.”
-        </p>
-
-        <p>“Very helpful, knew how to explain concepts well.”</p>
-
-        <p>“He is there to help you when you email he reply right away”</p>
-
-        <p>
-          “Very understanding and helpful, responds to emails in a timely
-          manner and is informative about the class material when missed.”
-        </p>
-
-        <p>
-          “Omar is great at communicating and efficient when answering
-          students questions.”
-        </p>
-
-        <p>
-          “Cared about his students and provided helpful feedback when needed.”
-        </p>
-
-        <p>
-          “Good professor, always willing to help, easy to contact
-          Professor Zadid did a good job explaining concepts.”
-        </p>
-
-      </div>
-
-    </details>
-
-  </section>
-
-
-  <!-- =========================
-       EARLY STUDENT NOTE
-  ========================== -->
-
-  <section class="section">
-
-    <div class="section-title">
-      A Note From My First Semester of Teaching
-    </div>
-
-    <div class="student-note">
-
-      <p>
-        “I just wanted to say thank you so much for being such a great TA
-        for MGTOP 215. I always understood the material a lot better when
-        attending the labs and having you explain it. So thank you for
-        being so patient with all of us this semester. Continue to be an
-        amazing TA for more students to come.”
-      </p>
-
-      <div class="quote-source">
-        Student email · Fall 2023
-      </div>
-
-    </div>
-
-  </section>
-
-</main>
-
 
   <footer>
     © 2026 Omar Al-Zadid
   </footer>
 
-</body>
 
+</body>
 </html>
